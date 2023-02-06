@@ -44,7 +44,7 @@ class ConnectionManager:
         # 存储ws连接对象
         self.active_connections.append(ws)
         # 通知信息
-        await self.send_personal_message("欢迎光临", ws)
+        await self.send_personal_message("欢迎光临~", ws)
 
     def disconnect(self, ws: WebSocket):
         # 关闭时 移除ws对象
