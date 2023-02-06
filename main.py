@@ -15,7 +15,7 @@ register_tortoise(
     app,
     db_url="mysql://root:adminQs888@10.4.102.231:3306/redbook",
     modules={"models": ["Dao.Model"]},
-    generate_schemas=True,
+    generate_schemas=False,
     add_exception_handlers=True
 )
 
