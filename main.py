@@ -13,9 +13,9 @@ app = FastAPI()
 # 注册数据库
 register_tortoise(
     app,
-    db_url="mysql://root:123456@localhost:3306/redbook",
+    db_url="mysql://root:adminQs888@10.4.102.231:3306/redbook",
     modules={"models": ["Dao.Model"]},
-    generate_schemas=False,
+    generate_schemas=True,
     add_exception_handlers=True
 )
 
