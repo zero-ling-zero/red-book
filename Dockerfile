@@ -17,4 +17,4 @@ RUN pip config set global.index-url http://mirrors.cloud.tencent.com/pypi/simple
 # 暴露端口
 # 此处端口必须与「服务设置」-「流水线」以及「手动上传代码包」部署时填写的端口一致，否则会部署失败。
 EXPOSE 8010
-RUN ["python","main.py"]
+CMD ["uvicorn","main:app","--host=127.0.0.1","--port=8010","s--reload"]
